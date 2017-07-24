@@ -21,6 +21,7 @@ public class Person {
         System.out.println("Las Vegas");
         System.out.println("One of my hobbies is playing video games");
         System.out.println("Red");
+      
     }
     
 }
