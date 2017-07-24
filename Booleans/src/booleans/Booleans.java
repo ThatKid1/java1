@@ -37,8 +37,19 @@ public class Booleans {
         System.out.println(x + " is less than or equal to " + y + ": " + f);  
         String s1 = "Good Morning";
         String s2 = "Hi There!";
-        String s3 = "Howdy Partner";
- 
+        String s3 = "Howdy Partner!";
+        boolean eq = s1.equals(s2);
+        int mn = s1.compareTo(s2);
+        int nm = s1.compareTo(s2);
+                
+        boolean b1 = true;
+        boolean b2 = false;
+        System.out.println("True and not true " + b1 && !b1 );
+        System.out.println("True and not false " + b1 && b1);
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        
     }
     
     
