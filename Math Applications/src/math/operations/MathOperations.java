@@ -28,9 +28,11 @@ public class MathOperations {
          System.out.println();
 
          x = 1/1;
-         w = 2+=n;
+         x+=2;
+         w = 2+2;
          v = 3*3;
-         m = 4-=x;     
+         w-=4; 
+         m = 4+4;     
          n = 5*5; 
          System.out.println(p + "\n" + w + "\n" + v + "\n" + m + "\n" + n);
          

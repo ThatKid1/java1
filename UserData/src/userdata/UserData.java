@@ -33,9 +33,11 @@ public class UserData {
         int age2 = age+5;
         System.out.println("Your age 5 years from now is " + age2);
         boolean trueage = age==day;
-        System.out.println(trueage + "If false, the age you entered is wrong.");
+        System.out.println(trueage + "If true, the day you were born is your age.");
         boolean birthyear = year/2000 >= 1;
         System.out.println(birthyear + " If true, you were born in 2000 or later.");
+        double level = shoe*Java;
+        System.out.println(level + "This is your true excitement level.");
 //        boolean 
 
 

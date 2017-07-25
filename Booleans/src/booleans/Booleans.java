@@ -44,12 +44,11 @@ public class Booleans {
                 
         boolean b1 = true;
         boolean b2 = false;
-        System.out.println("True and not true " + b1 && !b1 );
-        System.out.println("True and not false " + b1 && b1);
-        System.out.println();
-        System.out.println();
-        System.out.println();
-        
+        System.out.println(b1&&b2);
+        System.out.println(b1&&!b2);
+        System.out.println(b2&&!b1);
+        System.out.println(b2||b1);
+        System.out.println(b2||!b1);
     }
     
     
