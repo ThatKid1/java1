@@ -1,21 +1,44 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package mathio;
 
-/**
- *
- * @author Education Unlimited
- */
+import java.io.*;
+
 public class MathIO {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+
+        String FILENAME = "numbers.txt";
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(FILENAME))) {
+            //here is where you should put your numbers
+            String line1 = "1";
+            String line2 = "2";
+            String line3 = "3";
+            String line4 = "4";
+            //here is where you should write your numbers to the file
+            writer.write(line1);
+            writer.write("\n" + line2);
+            writer.write("\n" + line3);
+            writer.write("\n" + line4);
+            System.out.println("Done");
+        } catch (IOException e) {
+            e.printStackTrace();
+
+        }
+
+        //Part 2
+        try (BufferedReader reader = new BufferedReader(new FileReader(FILENAME))) {
+
+            String currentLine = reader.readLine();
+            double sum = 0;
+            while (currentLine != null) {
+                System.out.println(currentLine);
+                sum += Double.parseDouble(currentLine);
+                currentLine = reader.readLine();
+                System.out.println(sum);
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
-    
+
 }
