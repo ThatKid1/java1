@@ -9,7 +9,29 @@ public class Person {
     boolean AStudent;
     String hobby;
     String passions;
-    String phoneNumber;
+String phoneNumber;
+    public Person(String firstName1, String lastName1, String PhoneNumber1) {
+        firstName = firstName1;
+        lastName = lastName1;
+        phoneNumber = PhoneNumber1;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+    
 
     public int getAge() {
         return age;
@@ -58,5 +80,6 @@ public class Person {
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
-public class PhoneBook {
-       int[] array = new person[];
+
+    
+}
