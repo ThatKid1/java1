@@ -268,6 +268,7 @@ public class ChooseYourOwnAdventure {
                 }
                 if (quest3.equals("B")) {
 
+                    
                 }
                 if (quest3.equals("C")) {
                     System.out.println("You are found by a beautiful maiden who you run away with. \n You live a peaceful life until the wizard finds you and kills you both.");
