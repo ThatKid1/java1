@@ -33,6 +33,10 @@ public class TicTacToe {
             if (gameOver()) {
                 break;
             }
+            if (gameOver() == false) {
+                
+            }
+
         }
     }
 
@@ -86,31 +90,13 @@ public class TicTacToe {
         if (board[0][2] == board[1][1] && board[1][1] == board[2][0] && board[0][2] != ' ') {
             System.out.println("You Win!");
             return true;
+        }
+        if ((board[0][0] != ' ') && (board[0][1] != ' ') && (board[0][2] != ' ') && (board[1][0] != ' ') && (board[1][2] != ' ') && (board[2][0] != ' ') && (board[2][1] != ' ') && (board[2][1] != ' ') && (board[2][2] != ' ')) {
+            System.out.println("Tie game");
+            return true;
         } else {
             return false;
+        }
 
-            /*     if (){
-            
-        }
-        if (){
-            
-        }
-        if (){
-            
-        }
-        if (){
-            
-        }
-        if (){
-            
-        }
-        if (){
-            
-        }
-        if (){
-            
-        }
-             */
-        }
     }
 }
